@@ -4,6 +4,10 @@ public class User implements Serializable {
     private String name;
     private int age;
 
+    @Override
+    public String toString(){
+        return "Username: " + name + "User age: " + age;
+    }
     public User(String name, int age){
         this.name = name;
         this.age = age;
